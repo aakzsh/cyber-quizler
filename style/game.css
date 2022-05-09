@@ -72,7 +72,13 @@ body{
     color: white;
   }  
 
-
+  #manip {
+    top: -30rem;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+  }
+  
 .run {
   top: -30rem;
   width: 200px;

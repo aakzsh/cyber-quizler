@@ -9,7 +9,8 @@ function one() {
    if(LS[count-1]['ans'] == 1 || LS[count-1]['ques'] == '1'){
        console.log(count)
        count++;
-
+       document.getElementById("manip").classList.add('run');
+       
        loopQues()
 
       
@@ -28,6 +29,9 @@ function one() {
         // console.log("sahi sahi")
         console.log(count)
         count++;
+        document.getElementById("manip").classList.add('run');
+        
+
         loopQues()
         // window.location.href = 'game.html';
     }
@@ -46,12 +50,16 @@ if (count>LS.length){
 }
 
 
-
-
 document.getElementById('level').innerHTML = 'LEVEL: ' + count;
     document.getElementById('quest').innerHTML = LS[count-1]['ques'];
     document.getElementById('one').innerHTML = LS[count-1]['a'];
     document.getElementById('two').innerHTML = LS[count-1]['b'];
+
+
+    if ( document.getElementById("manip").classList.contains('run') ){
+        setTimeout(function() { document.getElementById("manip").classList.remove('run'); }, 2000);
+        
+    }
 }
 
 
