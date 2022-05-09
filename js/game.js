@@ -9,7 +9,13 @@ function one() {
    if(LS[count-1]['ans'] == 1 || LS[count-1]['ques'] == '1'){
        console.log(count)
        count++;
-       window.location.href = 'game.html';
+
+       loopQues()
+
+      
+        
+     
+    //    window.location.href = 'game.html';
    }
    else{
        window.location.href = 'wrong.html';
@@ -22,17 +28,31 @@ function one() {
         // console.log("sahi sahi")
         console.log(count)
         count++;
-        window.location.href = 'game.html';
+        loopQues()
+        // window.location.href = 'game.html';
     }
     else{
         window.location.href = 'wrong.html';
     }
    } 
 
+//    $("#button").click(function() {
+//     $('.transform').toggleClass('transform-active');
+//   });
+
 function loopQues(){
 if (count>LS.length){
     window.location.href='won.html';
 }
+
+
+
+
 document.getElementById('level').innerHTML = 'LEVEL: ' + count;
     document.getElementById('quest').innerHTML = LS[count-1]['ques'];
+    document.getElementById('one').innerHTML = LS[count-1]['a'];
+    document.getElementById('two').innerHTML = LS[count-1]['b'];
 }
+
+
+////////////////

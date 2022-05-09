@@ -1,6 +1,6 @@
 
 
-var questions = [{'ques':'whos hehe', 'ans': 1},{'ques':'whos not hehe', 'ans': 2} ]
+var questions = [{'ques':'whos hehe', 'ans': 1, 'a': 'first', 'b': 'second'},{'ques':'whos not hehe', 'ans': 2, 'a': 'pehla', 'b': 'dusra'} ]
 
 q = questions;
 
