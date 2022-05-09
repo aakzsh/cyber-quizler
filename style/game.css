@@ -84,7 +84,7 @@ body{
   width: 200px;
   height: 200px;
   position: fixed;
-  animation: myfirst 5s 1;
+  animation: myfirst 3s 1;
 }
 
 @keyframes myfirst {
