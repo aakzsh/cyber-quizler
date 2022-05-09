@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
     <title>Cyber Quizler</title>
+    <script src="js/questions.js"></script>
 </head>
-<body>
+<body onload="pushQuestions()">
 
     <style>
         body{
@@ -20,11 +21,13 @@
 
 
 <div class="content">
-    <p>cyber quizler</p>
+    <p class="cyber">cyber quizler</p>
     <p>  <h1 class="neon">Welcome to the cyber and digital literacy quiz</h1></p>
     <br>
-    <button>let's begin!</button>
+    <button class="one" onclick="pushStorage()">let's begin!</button>
 </div>
+
+<img src="assets/u2.png" alt="" style="position: fixed; bottom: 0; left:0; height: 400px;">
     
 </body>
 </html>

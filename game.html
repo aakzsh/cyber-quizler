@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/game.css">
+    <title>Cyber Quzler</title>
+    <script src="js/game.js"></script>
 </head>
-<body>
-    
+<body onload="loopQues()">
+    <div class="content">
+<p class="level" id="level">LEVEL: 1</p>
+
+<P id="quest">QUESTION</P>
+<div><button class="one" id="one" onclick="one()">one</button>
+<button class="two" id="two" onclick="two()">two</button>
+</div>
+<div class="run"> 
+    <img src="assets/run.png" alt="" height="200px">
+</div>
+    </div>
 </body>
 </html>

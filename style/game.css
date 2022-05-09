@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: graf;
+    src: url('../assets/sgs.otf');
+ }
+
+body{
+    background-image: linear-gradient(to bottom right, rgba(16, 17, 28, 1), rgba(13, 28, 170, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+  html{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+  }
+
+  .content{
+      height: 97vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      /* font-family: graf; */
+  }
+
+  .level{
+      font-size: 4rem;
+      font-family: graf;
+  }
+  .msg{
+    font-size: 2rem;
+    font-family: graf;
+}
+  h1{
+      margin: -2rem;
+  }
+
+
+  button {
+      background-color: transparent;
+    /* border: 3px; */
+    color: white;
+    min-width: 160px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .one {
+    color: white;
+    border: 2px solid #4CAF50;
+  }
+  
+  .one:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .two { 
+    color: white;
+    border: 2px solid #008CBA;
+  }
+  
+  .two:hover {
+    background-color: #008CBA;
+    color: white;
+  }  
+
+
+.run {
+  top: -30rem;
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  animation: myfirst 5s 1;
+}
+
+@keyframes myfirst {
+  0%   { left: 100vw;  top: 50px;}
+  100%  { left: -300px; top: 50px;}
+}
