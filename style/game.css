@@ -91,3 +91,18 @@ body{
   0%   { left: 100vw;  top: 50px;}
   100%  { left: -300px; top: 50px;}
 }
+
+
+
+.unicute{
+  position: fixed; bottom: 0; right: 0;
+  height: 150px;
+}
+
+
+@media screen and (min-width: 480px) {
+  .unicute{
+    position: fixed; bottom: 0; right: 0;
+    height: 400px;
+  }
+}

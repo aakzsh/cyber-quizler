@@ -52,3 +52,19 @@
       font-size: 2rem;
     font-family: 'Satisfy', cursive;
   }
+
+
+  
+.unicute{
+    position: fixed; bottom: 0; left: 0;
+    height: 150px;
+  }
+  
+  
+  @media screen and (min-width: 480px) {
+    .unicute{
+      position: fixed; bottom: 0; left: 0;
+      height: 400px;
+    }
+  }
+  
